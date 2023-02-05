@@ -8,8 +8,8 @@ public class MainRegistration {
         final RegistrationDAOH2Impl dao = new RegistrationDAOH2Impl();
         final RegistrationService registrationService = new RegistrationService(dao);
 
-        //registrationService.createRegistration("Cedric", "NoSe", 18);
-        //registrationService.createRegistration("Marc", "NoSe", 20);
+        registrationService.createRegistration("Cedric", "NoSe", 18);
+        registrationService.createRegistration("Marc", "NoSe", 20);
 
         System.out.println(registrationService.getRegistration(1));
         System.out.println(registrationService.getRegistration(2));
