@@ -19,7 +19,7 @@ public class RegistrationDAOMemImpl implements RegistrationDAO {
 
     @Override
     public Registration get(int id) {
-        return registrations.get(Long.parseLong(Integer.toString(id)));
+        return registrations.get((long) id);
     }
 
     @Override
